@@ -20,6 +20,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  background-color: #efecec;
 }
 
 img, picture, video, canvas, svg {
@@ -47,4 +49,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.image-logo {
+  position: relative;
+  width: 40vw;
+  height: 100vh;
+}
 
+.image-logo > img {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-title {
+  position: fixed;
+  top: 20%;
+  background-color: #00000060;
+  color: #fff;
+}
