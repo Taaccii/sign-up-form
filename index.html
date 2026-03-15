@@ -4,53 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-Up Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="image-logo">
     <img src="./img/skate-jump.jpg" alt="Man jumping with inline rollers">
     <div class="logo-title">
-      <p>The Odin Skate</p>
+      <p>Odin Skate</p>
     </div>
-    <div class="credit">Photo by <a href="https://unsplash.com/it/@maousse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jolan Willenegger</a> 
-      on <a href="https://unsplash.com/it/foto/un-uomo-che-vola-nellaria-mentre-cavalca-uno-skateboard-nYLvJaIiNRw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    </div>
+    <small class="credit">Photo by <a href="https://unsplash.com/it/@maousse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Jolan Willenegger</a> 
+      on <a href="https://unsplash.com/it/foto/un-uomo-che-vola-nellaria-mentre-cavalca-uno-skateboard-nYLvJaIiNRw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+    </small>
   </div>
 
   <div class="main">
     <div class="header">
-      <p class="big-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p class="big-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</p>
       <p class="big-text">You <em>know</em> you want to.</p>
     </div>
 
     <form action="" method="post">
       <fieldset>
-        <p class="big-text">Let's do this!</p>
+        <p class="big-text">Let's skate with us!</p>
 
-        <div class="input">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" required>
+        <div class="column-wrap">
+          <div class="input-c1">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required>
+
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,}" title="Minimum 8 characters, letters and numbers only" required>
+          </div>
+          <div class="input-c2">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" required>
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone" required>
+
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password" pattern="[A-Za-z0-9]{8,}" title="Minimum 8 characters, letters and numbers only" required>
+          </div>
         </div>
-        <div class="input">
-          <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name" required>
-        </div>
-        <div class="input">
-          <label for="email">EMAIL</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div class="input">
-          <label for="phone">PHONE NUMBER</label>
-          <input type="tel" name="phone" id="phone" required>
-        </div>
-        <div class="input">
-          <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password" required>
-        </div>
-        <div class="input">
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm-password" id="confirm-password" required>
-        </div>
+       
       </fieldset>
 
       <button type="submit">Create Account</button>
@@ -59,6 +61,10 @@
     <div class="login">
       <p>Already have an Account? <a href="">Log in</a></p>
     </div>
+
+    <footer class="footer">
+      <p>Make with love ❤️ by <a href="https://github.com/Taaccii" target="_blank">Tacci</a> Copyright © 2026</p>
+    </footer>
   </div>
 </body>
 </html>
