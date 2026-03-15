@@ -22,8 +22,6 @@
 - Input validation with `:user-invalid` pseudo-class
 - Password pattern validation (minimum 8 alphanumeric characters)
 - Focus state with custom blue border and box-shadow
-- Button hover and active press effect with `translateY`
-- Footer pinned to bottom with `margin-top: auto`
 
 ---
 
